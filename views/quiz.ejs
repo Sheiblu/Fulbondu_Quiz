@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<!-- =========  Header ======= -->
+<% include partials/header.ejs %>
+	<!-- ==========  Header End ===== -->
+
+
+	<body>
+
+		<div class="loader dark">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+				<rect x="0" y="0" width="4" height="10" fill="#333">
+					<animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0" dur="0.6s"
+					 repeatCount="indefinite" />
+				</rect>
+				<rect x="10" y="0" width="4" height="10" fill="#333">
+					<animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0.2s" dur="0.6s"
+					 repeatCount="indefinite" />
+				</rect>
+				<rect x="20" y="0" width="4" height="10" fill="#333">
+					<animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0.4s" dur="0.6s"
+					 repeatCount="indefinite" />
+				</rect>
+			</svg>
+		</div>
+
+
+
+		<!-- Nav and Logo  -->
+
+		<div id="menu-wrap" class="menu-back cbp-af-header dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="navbar navbar-expand-lg navbar-light bg-light mx-lg-0">
+							<a class="navbar-brand" href="index">
+								<img src="img/logo-light.png" alt="">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							 aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon">
+									<span class="menu-icon__line menu-icon__line-left"></span>
+									<span class="menu-icon__line"></span>
+									<span class="menu-icon__line menu-icon__line-right"></span>
+								</span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item">
+										<a class="nav-link" href="/home">হোম</a>
+									</li>
+									<li class="nav-item mt-2">
+										<a class="btn btn-primary js-tilt" href="logout" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24">
+											<span>লগ আউট</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Primary Page Layout ===================== -->
+
+
+
+
+
+		<!----  Quiz Start -->
+
+
+
+		<div class="section padding-top-bottom-big" id="quiz">
+			<div style="height: 100px;"></div>
+			<div class="background-parallax" style="background-image: url('img/parallax-dark.jpg')" data-enllax-ratio=".5" data-enllax-type="background"
+			 data-enllax-direction="vertical"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="title-wrap text-center">
+							<div class="back-title">
+								<%= round %>
+							</div>
+							<h1 class="text-white">কুইজ</h1>
+							<h6 style="color: #ffff">নিচের ১০ টি প্রশ্নের উত্তর দাও</h6>
+							<p id="time" style="color: #ffff"> Time</p>
+
+						</div>
+					</div>
+
+
+
+					<!-- Quiz form start  -->
+					<div class="col-md-12">
+
+						<form id="QuizForm" method="post" action="answer" role="form">
+							<input type="hidden" name="step" value="<%= step %>">
+							<input type="hidden" id="demoTime" name="time" value="--" style="color: #000">
+							<div class="controls">
+								<% let i = 1 %>
+
+									<% for (question in questions) { %>
+
+										<input type="hidden" name="questionId<%= parseInt(question)+1  %>" value="<%= questions[question].Id %>">
+
+										<div class="col-md-12 mt-3">
+											<div class="form-group">
+												<h4 style="color: #ffff">
+													<b>প্রশ্ন -
+														<%= number[i] %> :</b>
+													<%= questions[question].Question %>
+												</h4>
+											</div>
+										</div>
+
+										<%  i = i+1 %>
+
+											<div class="col-md-12 mt-3">
+												<div class="col-md-12 mt-3 mt-md-0">
+													<div class="form-group" style="margin-left: 65px">
+														<input style="color: #ffff" type='radio' name='answer<%= parseInt(question)+1 %>' value='1' /> &nbsp
+														<span style="color: aliceblue">
+															<%= questions[question].Answer_option_1 %>
+														</span>
+														<br>
+														<input style="color: #ffff" type='radio' name='answer<%= parseInt(question)+1 %>' value='2' /> &nbsp
+														<span style="color: aliceblue">
+															<%= questions[question].Answer_option_2 %>
+														</span>
+														<br>
+														<input style="color: #ffff" type='radio' name='answer<%= parseInt(question)+1 %>' value='3' /> &nbsp
+														<span style="color: aliceblue">
+															<%= questions[question].Answer_option_3 %>
+														</span>
+														<br>
+													</div>
+												</div>
+											</div>
+											<br>
+											<br>
+											<%   }    %>
+
+												<div class="row justify-content-center" style="padding-bottom: 50px">
+													<div class="col-md-8 mt-3 text-center">
+														<input type="submit" id="formSubmit" class="btn btn-primary btn-send text-center" value="ফলাফল">
+													</div>
+												</div>
+												<!-- </div> -->
+							</div>
+						</form>
+
+					</div>
+					<!-- Quiz form end  -->
+
+				</div>
+			</div>
+
+		</div>
+		<!----  Quiz Stop -->
+
+
+		<!--- Footer up  -->
+
+		<% include partials/footer_copy_right.ejs %>
+
+			<!--- Footer finigh  -->
+
+			<div class="scroll-to-top">to top</div>
+
+
+
+
+			<!-- JAVASCRIPT -->
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/plugins.js"></script>
+			<script src="js/chart-custom.js"></script>
+			<script src="js/particles-dark.js"></script>
+			<script src="js/custom.js"></script>
+
+			<script>
+
+
+				// Set the date we're counting down to
+				var countDownDate = new Date().getTime() + 302000;
+
+				// Update the count down every 1 second
+				var x = setInterval(function () {
+
+					var now = new Date().getTime();
+
+					// Find the distance between now and the count down date
+					var distance = countDownDate - now;
+
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Output the result in an element with id="demo"
+					console.log(distance.toString)
+					document.getElementById("time").innerHTML = minutes + " m  " + seconds + " s ";
+					document.getElementById("demoTime").value = distance;
+
+					// If the count down is over, write some text 
+					if (distance <= 1000) {
+						clearInterval(x);
+						document.getElementById('QuizForm').submit();
+					}
+				}, 1000);
+			</script>
+
+
+
+
+			<!-- No Back Option   -->
+
+			<script>
+				history.pushState(null, null, location.href);
+				window.onpopstate = function () {
+					history.go(1);
+				};
+
+			</script>
+
+
+
+
+			<!-- End Document
+================================================== -->
+	</body>
+
+</html>

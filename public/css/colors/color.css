@@ -1,0 +1,161 @@
+
+
+.loader svg path,
+.loader svg rect{
+	fill: #7b5eea;
+}
+.hero-center-wrap p span.font-big-color,
+.countdown li,
+.table-sale.future-price h4,
+.btn-primary.table-ver,
+.nav-item ul li a:hover,
+.nav-item ul li a:active,
+.nav-item ul li a:focus,
+.title-wrap .back-title,
+.app-btn,
+.app-btn:hover,
+.modal-body h3,
+.roadmap-box p.plan span,
+.footer-list li a:hover,
+.footer p a,
+.footer p a:hover,
+.nav-item ul li a.active-subnav,
+.menu-back.dark .nav-item ul li a.active-subnav,
+.menu-back.dark .nav-item ul li a:hover{
+	color: #7b5eea;
+}
+.menu-back.dark .nav-link:hover,  
+.menu-back.dark .nav-link:active,
+.nav-link:hover,  
+.nav-link:active {
+	color: #7b5eea !important;
+	border-color: #7b5eea !important; 
+}
+.nav-link.mPS2id-highlight,
+.menu-back.dark .nav-link.mPS2id-highlight{
+	color: #7b5eea !important;
+	border-color: #7b5eea !important; 
+}
+.color-pr{
+	color: #7b5eea !important;
+}
+.btn-primary.table-ver:active,
+.btn-primary.table-ver:focus{
+	color: #7b5eea !important;
+}
+.hero-center-wrap p span.back-color,
+.btn-primary,
+.btn-primary:hover,
+.countdown p span,
+.background-color,
+.table-sale.future-price p span,
+.line-sep,
+.next-roadmap:hover,
+.prev-roadmap:hover,
+#owl-roadmap:before,
+.app-list li:before,
+.team-img-mask,
+.progress-bar,
+.roadmap-box p span,
+.accordion-style .card-header a:hover,
+.accordion-style .card-header a:before,
+.accordion-style .card-header a:after,
+input.btn.btn-primary,
+.prev-roadmap.dark,
+.next-roadmap.dark{
+	background-color: #7b5eea !important;
+}
+.table-sale.future-price .table-line,
+.nav-item:hover ul,
+.roadmap-box:after,
+.accordion-style .card-header a{
+	border-color: #7b5eea;
+}
+.btn-primary:focus,
+.btn-primary:active{
+	background-color: #7b5eea !important;
+}
+.countdown li {
+	box-shadow: 0 8px 40px -6px rgba(123, 94, 234, 0.2); 
+}
+.table-shadow {
+	box-shadow: 0 8px 60px -6px rgba(123, 94, 234, 0.7); 
+}
+.sub-shadow{
+	box-shadow: 0 8px 30px -6px rgba(123, 94, 234, 0.2); 
+}
+.roadmap-shadow{
+	box-shadow: 0 8px 40px -6px rgba(123, 94, 234, 0.3); 
+}
+.video-shadow{
+	box-shadow: 0 8px 60px -6px rgba(123, 94, 234, 0.3); 
+}
+.prev-roadmap,
+.next-roadmap{
+	box-shadow: 0 8px 35px -6px rgba(123, 94, 234, 0.7); 
+}
+.team-img-wrap img{ 
+	box-shadow: 0 8px 15px -6px rgba(123, 94, 234, 0.5);
+}
+.team-img-wrap:hover img{ 
+	box-shadow: 0 8px 45px -6px rgba(123, 94, 234, 0.3);
+}
+.roadmap-box:before{
+	background: linear-gradient(#7b5eea, #fff);
+}
+.item.dark .roadmap-box:before{
+	background: linear-gradient(#7b5eea, #0e0529) !important;
+}
+.form-control{
+	background-color: rgba(123, 94, 234, 0.08);
+}
+.suscribe .form-control{
+	background-color: rgba(123, 94, 234, 0.28);
+}
+.form-control:active,
+.form-control:focus{
+	background-color: rgba(123, 94, 234, 0.7);
+}
+.scene path:first-child ,
+.scene path:nth-child(2),
+.scene path:nth-child(3),
+.scene path:nth-child(4),
+.scene path:nth-child(5),
+.scene path:nth-child(6),
+.scene path:nth-child(7) {
+	fill: #7b5eea;
+}
+figure.vimeo a:before, figure.youtube a:before {
+	border-left: 10px solid #7b5eea;
+}
+figure.vimeo:hover a:after, figure.youtube:hover a:after {
+	background:#7b5eea;
+}
+::selection {
+	background-color: #7b5eea;
+}
+::-moz-selection {
+	background-color: #7b5eea;
+}
+@media (max-width: 991px) { 
+	.nav-link:hover,  
+	.nav-link:active {
+		border-color: transparent !important; 
+	}
+	.sub-shadow{
+		box-shadow: 0 8px 40px -6px rgba(123, 94, 234, 0); 
+	}
+	.nav-item:hover ul{
+		border-color: transparent;
+	}	
+}
+
+
+
+
+
+
+
+
+
+

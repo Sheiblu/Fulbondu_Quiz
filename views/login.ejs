@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+
+<!-- =========  Header ======= -->
+<% include partials/header.ejs %>
+	<!-- ==========  Header End ===== -->
+
+	<body>
+
+		<div class="loader dark">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+				<rect x="0" y="0" width="4" height="10" fill="#333">
+					<animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0" dur="0.6s"
+					 repeatCount="indefinite" />
+				</rect>
+				<rect x="10" y="0" width="4" height="10" fill="#333">
+					<animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0.2s" dur="0.6s"
+					 repeatCount="indefinite" />
+				</rect>
+				<rect x="20" y="0" width="4" height="10" fill="#333">
+					<animateTransform attributeType="xml" attributeName="transform" type="translate" values="0 0; 0 20; 0 0" begin="0.4s" dur="0.6s"
+					 repeatCount="indefinite" />
+				</rect>
+			</svg>
+		</div>
+
+
+
+		<!-- Nav and Logo
+	================================================== -->
+
+		<div id="menu-wrap" class="menu-back cbp-af-header dark">
+			<% include partials/menu/menu_without_login.ejs %>
+		</div>
+
+
+		<!-- Primary Page Layout
+	================================================== -->
+
+		<div class="section full-height height-auto-lg hide-over background-dark-blue-3">
+			<div class="hero-center-wrap relative-on-lg">
+				<div class="container" style="background-image: url('img/parallax-dark-3.jpg'); padding-top: 5px">
+					<form class="mt-5" method="post" action="login" role="form">
+						<div class="row justify-content-center">
+							<div class="col-md-8">
+								<div class="form-group text-center">
+									<h4 style="color: #ffff">ফুল বন্ধুতে লগইন করো</h4>
+								</div>
+							</div>
+						</div>
+						<div class="controls">
+							<div class="row justify-content-center">
+								<div class="col-md-6 mt-3">
+									<div class="form-group text-center">
+										<input id="form_phone" required="required" type="tel" name="phone" class="form-control text-center" placeholder="আপনার ফোন নম্বর দিন">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-md-6 mt-3">
+									<div class="form-group text-center">
+										<input id="form_password" required="required" type="password" name="password" class="form-control text-center" placeholder="পাসওয়ার্ড দিন">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row justify-content-center" style="padding-bottom: 50px">
+								<div class="col-md-8 mt-3 text-center">
+									<input type="submit" class="btn btn-primary btn-send text-center" value="লগইন">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="particles-js" class="min-height"></div>
+		</div>
+
+
+
+
+
+		<!--- Footer Copy Right start  -->
+
+		<% include partials/footer_copy_right.ejs %>
+
+			<!--- Footer Copy Right finigh  -->
+
+
+
+			<div class="scroll-to-top">to top</div>
+
+
+
+
+			<!-- JAVASCRIPT
+    ================================================== -->
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/plugins.js"></script>
+			<script src="js/chart-custom.js"></script>
+			<script src="js/particles-dark.js"></script>
+			<script src="js/custom.js"></script>
+
+			<!-- End Document
+================================================== -->
+	</body>
+
+</html>
