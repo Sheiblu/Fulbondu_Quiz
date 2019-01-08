@@ -1,4 +1,4 @@
-# Fulbondu_Quiz
+# Fulbondu Quiz
 
 
 Fulbundhu quiz is a a2a project, which is built for the students who are now reading in class 6 to 12.
@@ -6,7 +6,9 @@ Fulbundhu quiz is a a2a project, which is built for the students who are now rea
 Student can participate the quiz contest, they must play 7 rounds. And finally the top scorer students will get the prize.
 The PM of Bangladesh will reward them.
 
-Student can registration, login the application, participate the quiz, see her positions etc
+# Feature
+
+Student can registration, login the application, participate the quiz, see her positions etc.
 
 
 # Technology
